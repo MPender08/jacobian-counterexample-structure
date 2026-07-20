@@ -1,0 +1,9 @@
+detJF+2: 0
+target cone bridge: 0
+R pullback: 0
+x^2 Q pullback: 0
+L pullback: 0
+factorization F1: 0
+factorization F2: 0
+factorization F3: 0
+all Nerdamer assertions passed

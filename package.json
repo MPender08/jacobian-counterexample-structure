@@ -1,0 +1,7 @@
+{
+  "name": "structural-jacobian-followup",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {"verify": "node src/verify_structural_nerdamer.js"},
+  "dependencies": {"nerdamer": "1.1.13"}
+}

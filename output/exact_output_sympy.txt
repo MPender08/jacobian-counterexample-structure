@@ -1,0 +1,74 @@
+
+[environment]
+python 3.12.13
+sympy 1.14.0
+
+[base map]
+det JF = -2
+
+[general A+zB determinant coefficients]
+det J(A+zB) = C0 + z*C1 + z^2*C2
+C0=det(Ax,Ay,B); C1=det(Bx,Ay,B)+det(Ax,By,B); C2=det(Bx,By,B)
+
+[special B and rank geometry]
+B = [(x*y + 1)**3, 3*x*(x*y + 1)**2, -x**3]
+2x2 minors of dB = [-9*x*(x*y + 1)**4, 9*x**3*(x*y + 1)**2, 18*x**4*(x*y + 1)]
+rank(dB)=2 iff x(1+xy) != 0; rank=1 on x=0 or 1+xy=0
+on x!=0: B=(x/3)Bx+(1/(3x))By
+
+[cubic cone and normalization]
+cone equation = 27*t*w**2 + v**3
+singular-locus equations from gradient: v=0, w=0
+normalization generators: w=p^3, v=3p^2q, s=pq^2, t=-q^3
+normalization relations = [-9*s*w + v**2, s*v + 3*t*w, 3*s**2 + t*v]
+
+[target invariants and cone bridge]
+Q = 27*a**2*c**2 - 18*a*b*c + 16*a + b**3*c - b**2
+R = -3*b*c + 4
+L = 27*a*c**2 - 9*b*c + 8
+R^3+27Qc^2-L^2 = 0
+disc_x(Qx^3+Rx-2c) = -4*(27*a*c**2 - 9*b*c + 8)**2*(27*a**2*c**2 - 18*a*b*c + 16*a + b**3*c - b**2)
+same cubic form: C(B1,B2,B3)=0 and C(c,R,Q)=L^2
+
+[projective-root model]
+Phi(S,T) = 2*S**3*a - S**2*T*b + 2*S*T**2 - T**3*c
+Phi_F(x,1+xy) = 0
+disc_s Phi(s,1) = -4Q
+target (-1/4,0,0): -svar*(svar - 2)*(svar + 2)/2 with simple roots 0,2,-2
+affine source equals the simple-root locus in the incidence cover (literature result)
+
+[source pullbacks and primitive cubic]
+k = -x**2*z - 3*x*y + 2
+d = -3*x**3*y*z - 9*x**2*y**2 - 3*x**2*z - 3*x*y + 4
+F3=xk; R=d^2-6k; x^2Q=8k-d^2; L=d(9k-d^2)
+primitive equation: d^3-3Rd-2L=0
+disc_d = -108(L^2-R^3) = -2916*Q*c^2
+quadratic resolvent: Z^2-54L Z+729R^3
+
+[birational factorization and Jacobian compensation]
+Phi=(q,k,d), det JPhi = -3*x**3*(x**2*z + 3*x*y - 2)
+Psi(q,k,d) = [(-d0 - 2)*(d0**2 + d0 - 9*k0 - 2)/(27*k0**2*q0**2), (-d0**2 + 6*k0 + 4)/(3*k0*q0), k0*q0]
+det JPsi = -2/(3*k0*q0**3)
+Psi o Phi = F; determinant product = -2
+
+[finite cubic model]
+pi(d,R,c)=(R,(d^3-3Rd)/2,c), det Jpi = -3*(-Rv + d0**2)/2
+tau(a,b,c)=(R,L,c), det Jtau = 81*c**3
+boundary d^2=R maps to L=-d^3, hence L^2=R^3 (equiv. Q=0)
+
+[Galois square class]
+disc_a(Q) = -4*(3*b*c - 4)**3
+Q is irreducible over C[b,c] because this is not a square in C(b,c)
+generic cubic Galois group = S3; quadratic subfield = K(sqrt(-Q))
+over Q!=0 the simple-root incidence cover is finite etale of degree 3
+
+[exact structured family]
+det J F_{lambda,alpha,gamma,0} = -2*gamma*lambda**2
+adding arbitrary H(x,y) in W=gamma*z+H is source-triangular equivalence
+
+[plane-coordinate pullback family]
+template determinant in (q,r,z) = -2
+after (q,r)=(q(x,y),r(x,y)): det = -2*det d(q,r)/d(x,y)
+
+[done]
+all exact assertions passed
