@@ -103,6 +103,16 @@ be compared with
 
 No floating-point result is used as proof.
 
+## Acknowledgments
+
+Special thanks to Levent Alpöge, Akhil Mathew, and the team at Anthropic. The three-dimensional polynomial map studied in this repository was originally discovered by Anthropic’s Claude Fable 5 and publicly announced by Levent Alpöge on July 20, 2026.
+
+This repository also draws on A COUNTEREXAMPLE TO THE JACOBIAN CONJECTURE ([Link](https://www.ulam.ai/research/jacobian.pdf)) analyzing the identical map, particularly for the projective-root incidence model, complete fiber classification, and higher-degree deformation families. Those imported results are explicitly identified and attributed in the report.
+
+The structural calculations, exact symbolic verification, literature comparison, and drafting of the technical report were carried out by OpenAI’s GPT-5.6 Sol operating through the ChatGPT Work agent.
+
+My role was to formulate the research questions, design and refine the investigation, supervise the agent’s progress, distinguish original calculations from same-day literature results, review the mathematical claims and presentation, and prepare the final repository for public release.
+
 ## License
 
 Released under the [MIT License](LICENSE).
