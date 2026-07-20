@@ -98,7 +98,6 @@ be compared with
 - `requirements.txt` — pinned Python dependencies.
 - `package.json` and `package-lock.json` — pinned Node dependency metadata.
 - `environment.txt` — recorded provenance and concise reproduction commands.
-- `VALIDATION.md` — clean-environment release validation record.
 - `LICENSE` — MIT license for this repository.
 
 No floating-point result is used as proof.
