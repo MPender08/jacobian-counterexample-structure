@@ -104,7 +104,7 @@ No floating-point result is used as proof.
 
 ## Acknowledgments
 
-Special thanks to Levent Alpöge, Akhil Mathew, and the team at Anthropic. The three-dimensional polynomial map studied in this repository was originally discovered by Anthropic’s Claude Fable 5 and publicly announced by Levent Alpöge on July 20, 2026.
+Special thanks to Levent Alpöge, Akhil, and the team at Anthropic. The three-dimensional polynomial map studied in this repository was originally discovered by Anthropic’s Claude Fable 5 and publicly announced by Levent Alpöge on July 20, 2026.
 
 This repository also draws on A COUNTEREXAMPLE TO THE JACOBIAN CONJECTURE ([Link](https://www.ulam.ai/research/jacobian.pdf)) analyzing the identical map, particularly for the projective-root incidence model, complete fiber classification, and higher-degree deformation families. Those imported results are explicitly identified and attributed in the report.
 
